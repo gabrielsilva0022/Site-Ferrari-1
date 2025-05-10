@@ -9,16 +9,20 @@
 <body>
     <section id="login">
         <h1>Login</h1>
+        <table border="1" width="150" height="150" bgcolor="#B5B5B5">
+            <td><ul>
         <form id="login-form" onsubmit="return validarLogin()">
             <label for="username">Usuário</label>
-            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required>
+            <input type="text" id="username" name="username" placeholder="Digite seu nome de usuário" required style="display: block;">
             
             <label for="password">Senha</label>
-            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required style="display: block;">
             
             <button type="submit">Entrar</button>
         </form>
-        <p id="error-message" style="color: red; display: none;">Usuário ou senha incorretos.</p>
+        </ul></td>
+        </table>
+        <p id="error-message" style="color: rgb(255, 0, 0); display: none;">Usuário ou senha incorretos.</p>
     </section>
 
     <script>
